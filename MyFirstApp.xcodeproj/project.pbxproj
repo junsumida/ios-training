@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		796B2032175C41A900B3F08F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B2031175C41A900B3F08F /* ViewController.m */; };
 		796B2035175C623F00B3F08F /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B2034175C623F00B3F08F /* MixiSampleClass.m */; };
+		796B2041175C806400B3F08F /* MixiModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B203F175C806400B3F08F /* MixiModalViewController.m */; };
+		796B2042175C806400B3F08F /* MixiModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796B2040175C806400B3F08F /* MixiModalViewController.xib */; };
 		79A866B2175C353C00CFFA7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B1175C353C00CFFA7E /* UIKit.framework */; };
 		79A866B4175C353C00CFFA7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B3175C353C00CFFA7E /* Foundation.framework */; };
 		79A866B6175C353C00CFFA7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B5175C353C00CFFA7E /* CoreGraphics.framework */; };
@@ -25,6 +27,9 @@
 		796B2031175C41A900B3F08F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		796B2033175C623F00B3F08F /* MixiSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleClass.h; sourceTree = "<group>"; };
 		796B2034175C623F00B3F08F /* MixiSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleClass.m; sourceTree = "<group>"; };
+		796B203E175C806400B3F08F /* MixiModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiModalViewController.h; sourceTree = "<group>"; };
+		796B203F175C806400B3F08F /* MixiModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiModalViewController.m; sourceTree = "<group>"; };
+		796B2040175C806400B3F08F /* MixiModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiModalViewController.xib; sourceTree = "<group>"; };
 		79A866AE175C353C00CFFA7E /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A866B1175C353C00CFFA7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79A866B3175C353C00CFFA7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				79A866C0175C353C00CFFA7E /* AppDelegate.h */,
+				796B203E175C806400B3F08F /* MixiModalViewController.h */,
+				796B203F175C806400B3F08F /* MixiModalViewController.m */,
+				796B2040175C806400B3F08F /* MixiModalViewController.xib */,
 				79A866C1175C353C00CFFA7E /* AppDelegate.m */,
 				796B2033175C623F00B3F08F /* MixiSampleClass.h */,
 				796B2034175C623F00B3F08F /* MixiSampleClass.m */,
@@ -168,6 +176,7 @@
 				79A866C6175C353C00CFFA7E /* Default@2x.png in Resources */,
 				79A866C8175C353C00CFFA7E /* Default-568h@2x.png in Resources */,
 				79A866CE175C353C00CFFA7E /* ViewController.xib in Resources */,
+				796B2042175C806400B3F08F /* MixiModalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +191,7 @@
 				79A866C2175C353C00CFFA7E /* AppDelegate.m in Sources */,
 				796B2032175C41A900B3F08F /* ViewController.m in Sources */,
 				796B2035175C623F00B3F08F /* MixiSampleClass.m in Sources */,
+				796B2041175C806400B3F08F /* MixiModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

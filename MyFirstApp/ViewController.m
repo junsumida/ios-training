@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MixiSampleClass.h"
+#import "MixiModalViewController.h"
 
 @interface ViewController ()
 {
@@ -15,6 +16,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIView *firstview;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+
 @end
 
 @implementation ViewController
@@ -27,6 +29,13 @@
     isClicked = false;
     id mixiSample = [MixiSampleClass alloc];
     NSLog(@"%@", [mixiSample hello]);
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    MixiModalViewController *postViewController = [[MixiModalViewController alloc] init];
+    postViewController.delegate = self;
+    [self presentViewController:postViewController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,6 +53,10 @@
         _firstview.backgroundColor = [UIColor redColor];
     }
     NSLog(@"here!!, %@", sender);
+}
+-(void)didPressCloseButton
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
