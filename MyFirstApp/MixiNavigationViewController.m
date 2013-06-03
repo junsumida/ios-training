@@ -27,7 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"hogehoge";
+    //self.title = @"hogehoge";
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    self.title = [NSString stringWithFormat:@"%d", viewControllers.count];
 }
 
 - (void)didReceiveMemoryWarning
