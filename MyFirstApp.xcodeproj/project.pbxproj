@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		796B2032175C41A900B3F08F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B2031175C41A900B3F08F /* ViewController.m */; };
+		796B2035175C623F00B3F08F /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B2034175C623F00B3F08F /* MixiSampleClass.m */; };
 		79A866B2175C353C00CFFA7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B1175C353C00CFFA7E /* UIKit.framework */; };
 		79A866B4175C353C00CFFA7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B3175C353C00CFFA7E /* Foundation.framework */; };
 		79A866B6175C353C00CFFA7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A866B5175C353C00CFFA7E /* CoreGraphics.framework */; };
@@ -16,11 +18,13 @@
 		79A866C4175C353C00CFFA7E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A866C3175C353C00CFFA7E /* Default.png */; };
 		79A866C6175C353C00CFFA7E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A866C5175C353C00CFFA7E /* Default@2x.png */; };
 		79A866C8175C353C00CFFA7E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A866C7175C353C00CFFA7E /* Default-568h@2x.png */; };
-		79A866CB175C353C00CFFA7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A866CA175C353C00CFFA7E /* ViewController.m */; };
 		79A866CE175C353C00CFFA7E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A866CC175C353C00CFFA7E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		796B2031175C41A900B3F08F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		796B2033175C623F00B3F08F /* MixiSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleClass.h; sourceTree = "<group>"; };
+		796B2034175C623F00B3F08F /* MixiSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleClass.m; sourceTree = "<group>"; };
 		79A866AE175C353C00CFFA7E /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A866B1175C353C00CFFA7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79A866B3175C353C00CFFA7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,7 +39,6 @@
 		79A866C5175C353C00CFFA7E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		79A866C7175C353C00CFFA7E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		79A866C9175C353C00CFFA7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		79A866CA175C353C00CFFA7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		79A866CD175C353C00CFFA7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +88,10 @@
 			children = (
 				79A866C0175C353C00CFFA7E /* AppDelegate.h */,
 				79A866C1175C353C00CFFA7E /* AppDelegate.m */,
+				796B2033175C623F00B3F08F /* MixiSampleClass.h */,
+				796B2034175C623F00B3F08F /* MixiSampleClass.m */,
 				79A866C9175C353C00CFFA7E /* ViewController.h */,
-				79A866CA175C353C00CFFA7E /* ViewController.m */,
+				796B2031175C41A900B3F08F /* ViewController.m */,
 				79A866CC175C353C00CFFA7E /* ViewController.xib */,
 				79A866B8175C353C00CFFA7E /* Supporting Files */,
 			);
@@ -175,7 +180,8 @@
 			files = (
 				79A866BE175C353C00CFFA7E /* main.m in Sources */,
 				79A866C2175C353C00CFFA7E /* AppDelegate.m in Sources */,
-				79A866CB175C353C00CFFA7E /* ViewController.m in Sources */,
+				796B2032175C41A900B3F08F /* ViewController.m in Sources */,
+				796B2035175C623F00B3F08F /* MixiSampleClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				79A866D3175C353C00CFFA7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
