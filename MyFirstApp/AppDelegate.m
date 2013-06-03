@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "MixiNavigationViewController.h" // need?
 
 @implementation AppDelegate
 
@@ -17,7 +18,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    MixiNavigationViewController *nvc = [[MixiNavigationViewController alloc] init];
+    
+    //self.window.rootViewController = self.viewController;
+
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:nvc];
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     return YES;
 }
