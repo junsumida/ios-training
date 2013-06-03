@@ -7,6 +7,7 @@
 //
 
 #import "MixiNavigationViewController.h"
+#import "MixiModalViewController.h"
 
 @interface MixiNavigationViewController ()
 
@@ -30,6 +31,8 @@
     //self.title = @"hogehoge";
     NSArray *viewControllers = self.navigationController.viewControllers;
     self.title = [NSString stringWithFormat:@"%d", viewControllers.count];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"pop" style:UIBarButtonItemStylePlain target:self action:@selector(pressPopButton)];
+    self.navigationItem.rightBarButtonItem = rightButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +43,10 @@
 - (IBAction)buttonTapped:(id)sender {
     MixiNavigationViewController *nvc = [[MixiNavigationViewController alloc] init];
     [self.navigationController pushViewController:nvc animated:YES];
+}
+- (void)pressPopButton
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
